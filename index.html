@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Three.js Camera Panning Example with Text</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #text-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 15%;
+            padding: 20px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            color: #000000;
+            background-color: #ffffff;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        }
+        #text-container:hover {
+            color: #ffffff;
+            background-color: #000000;
+            border-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <button id="text-container" onclick="handleButtonClick()">
+        <p>ENTER SITE</p>
+    </button>
+    <!-- Including the three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/104/three.min.js"></script>
+<script src="script.js"></script>
+  </body>
+</html>
